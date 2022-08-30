@@ -1,0 +1,735 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+
+#root{
+    max-width: 1920px;
+    width: 100%;
+    height: auto;
+    background: #e5e5e5;
+}
+
+#nav{
+    width: 100%;
+    height: 207px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#first_nav{
+    width: 100%;
+    height: 47px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #2A2A2A;
+}
+
+#first_nav > :nth-child(1){
+    margin-right: 8px;
+}
+
+#first_nav > :nth-child(2){
+    font-size: 12px;
+    color: #ffffff;
+    padding-right: 17px;
+}
+
+#first_nav > :nth-child(3){
+    width: 1px;
+    height: 14px;
+    background: #ffffff;
+    margin-right: 20px;
+}
+
+#first_nav > :nth-child(4){
+    font-size: 12px;
+    color: #ffffff;
+}
+
+#first_nav > img {
+    margin: 0 15px;
+}
+
+#second_nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 374px;
+}
+
+#second_nav_left{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#location_card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 45px;
+}
+
+#location_card > :nth-child(2){
+    color: #999999;
+    font-size: 14px;
+    padding-left: 7px;
+}
+
+#search_card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 45px;
+}
+
+#search_card > input{
+    border: none;
+    background: none;
+    color: #999999;
+    outline: none;
+    margin-left: 15px;
+}
+
+#search_card > input::placeholder{
+    color: #999999;
+}
+
+#second_nav_right{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#phone_card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#phone_card > a{
+    padding: 0 13px 0 24px;
+    color: #2A2A2A;
+    font-size: 16px;
+}
+
+#like_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#like_card > span{
+    width: 1px;
+    height: 24px;
+    background: #999999;
+}
+
+#like_card > img {
+    margin: 0 25px;
+}
+
+#user_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 28px;
+}
+
+#user_card > a{
+    font-size: 16px;
+    color: #2A2A2A;
+    padding-left: 10px;
+}
+
+#third_nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 375px;
+}
+
+#third_nav > button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 22px;
+    background: #F7F7F7;
+    border: none;
+    cursor: pointer;
+}
+
+#third_nav > button > :nth-child(1){
+    margin-right: 24px;
+}
+
+
+#third_nav > button > :nth-child(2){
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#nav_link_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav_link_card a{
+    color: #2A2A2A;
+    padding-right: 40px;
+    font-weight: 600;
+}
+
+#nav_link_card a:hover{
+    color: #7FAD39;    
+}
+
+
+#cart {
+    width: 125px;
+    height: 50px;
+    background: #7FAD39;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cart > :nth-child(2){
+    padding-left: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffff;
+}
+
+#sec1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#sec1_cards{
+    width: 358px !important;
+    height: 228px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* margin-top: 50px; */
+    background: #fff;
+    padding: 6px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    /* margin-right: 30px; */
+}
+
+#sec1_cards > img{
+    width: 100%;
+    height: 100%;
+}
+
+#sec1_discount_card{
+    width: 255px;
+    height: 99px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background: #fff;
+    position: absolute;
+    top: 14px;
+    left: 0;
+}
+
+#sec1_discount_card > :nth-child(1){
+    color: #7FAD39;
+    font-weight: 600;
+}
+
+#sec1_discount_card > :nth-child(2){
+    font-weight: 600;
+    padding: 5px 0;
+}
+
+#sec1_discount_card > :nth-child(3){
+    color: #757575;
+}
+
+#sec1_cards > button{
+    position: absolute;
+    bottom: 14px;
+    right: 14px;
+    padding: 15px 22px;
+    background: transparent;
+    border: 1px solid #7FAD39;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+
+#sec1_cards > button:hover{
+    background: #7FAD39;
+}
+
+#sec2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 40px;
+    padding: 0 376px;
+}
+
+#sec2 > :nth-child(1){
+    color: #7FAD39;
+    font-weight: 600;
+}
+
+#sec2 > :nth-child(2){
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 5px;
+}
+
+#sec2_cards_container{
+    width: 100%;
+    height: auto;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+#sec2_cards{
+    width: 178px;
+    height: 127px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    background: #FFFFFF;
+    border: 0.5px solid rgba(42, 42, 42, 0.15);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.06);
+    margin-right: 20px;
+}
+
+#sec2_cards > p {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+.slick-slide > div {
+  margin: 10px;
+}
+
+#sec3{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+    padding: 0 376px;
+}
+
+#sec3 > :nth-child(1){
+    font-size: 14px;
+    font-weight: 800;
+    color: #7FAD39;
+}
+
+#sec3 > :nth-child(2){
+    font-size: 24px;
+    font-weight: 800;
+    color: #2A2A2A;
+}
+
+#sec3_cards_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+#card{
+    width: 226px !important;
+    height: 335px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; 
+    background: #FFFFFF;
+    border: 0.5px solid rgba(42, 42, 42, 0.15);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.06);   
+}
+
+#discount_card{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#discount_card > :nth-child(1){
+    width: 59px;
+    height: 25px;
+    background: #7FAD39;
+    font-weight: 800;
+    font-size: 12px;
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#discount_card > :nth-child(2){
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #D8E6C3;
+    border: none;
+}
+
+#img_card{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img_card > img {
+    height: 100%;
+}
+
+#price_card{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#price_card > :nth-child(1){
+    font-size: 12px;
+    font-weight: 600;
+    color: #A9A9A9;
+}
+
+
+#price_card > :nth-child(2){
+    font-weight: 600;
+    padding-top: 5px;
+}
+
+#price_card > :nth-child(3){
+    padding-top: 8px;
+    font-weight: 600;
+    color: #7FAD39;
+}
+
+#price_card > :nth-child(3) > s{
+    color: #A9A9A9;
+    padding-left: 30px;
+}
+
+#btns_card{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#btns_card > button{
+    padding: 6px 12px;
+    background: #2A2A2A;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+}
+
+#btns_card > button{
+    margin: 0 10px;
+}
+
+
+#overall_card{
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+#sec4{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 376px;
+    margin-top: 50px;
+}
+
+#sec4 > :nth-child(1){
+    color: #7FAD39;
+    font-weight: 800;
+}
+
+#sec4 > :nth-child(2){
+    font-size: 24px;
+    font-weight: 800;
+    padding-top: 5px;
+}
+
+#sec4_container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+#sec4_cards{
+    width: 377px;
+    height: 290px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+#sec4_cards  > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+#sec4_text_card{
+    width: 145px;
+    height: auto;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+#sec4_text_card > :nth-child(1){
+    font-size: 28px;
+    font-weight: 600;
+}
+
+#sec4_text_card > :nth-child(2){
+    font-size: 28px;
+    padding-top: 5px;
+}
+
+#sec4_text_card > button{
+    padding: 18px 20px;
+    margin-top: 18px;
+    background: #2A2A2A;
+    color: #FFFFFF;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#sec4_bottom{
+    width: 100%;
+    height: 140px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    background-image: url(./Assets/Images/img14.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sec4_bottom > :nth-child(1){
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+#sec4_bottom > :nth-child(2){
+    width: 271px;
+    height: 40px;
+    background: rgba(127, 173, 57, 0.7);
+    border: 2px dashed #FFFFFF;
+    margin-top: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+
+#footer{
+    width: 100%;
+    height: 557px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 380px;
+    background: #191919;
+    margin-top: 200px;
+    color: #FFFFFF;
+}
+
+#footer_top_container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    margin-top: 60px;
+}
+
+
+#footer_logo_card > p{
+    padding-top: 10px;
+}
+
+#footer_link_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#footer_link_card > :nth-child(1){
+    font-weight: 600;
+}
+
+#footer_link_card  > a{
+    padding-top: 10px;
+    color: #ffff;
+    opacity: 0.8;
+}
+
+#footer_inp_card > :nth-child(1){
+    font-size: 20px;
+    font-weight: 800;
+}
+
+#app_play_card{
+    margin-top: 20px;
+}
+
+#footer_inp_card > :nth-child(3){
+    padding-top: 40px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+#inputs_card{
+    width: 460px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#inputs_card > :nth-child(1){
+    width: 287px;
+    height: 100%;
+    padding: 0 20px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    color: #757575;
+}
+
+#inputs_card > :nth-child(2){
+    width: 173px;
+    height: 100%;
+    background: #7FAD39;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 800;
+    color: #fff;
+    border: none;
+}
+
+#footer_inp_card > :nth-child(5){
+    padding-top: 40px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+#payment_card{
+    margin-top: 20px;
+}
+
+#payment_card > a{
+    margin-right: 10px;
+}
+
+#footer > :last-child{
+    padding-bottom: 40px;
+    font-weight: 600;
+}
